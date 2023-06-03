@@ -25,7 +25,7 @@ class process_mining_test(unittest.TestCase):
                 self.assertEqual(expected_events[event][1], bucket)  # check if its frequency is correct
                 del expected_events[event]  # removed the expected element in case the caseID is repeated in some way
             else:
-                print("case ID: {0}, was not expected".format(caseID))
+                print("case ID: {0}, was not expected".format(event))
                 self.assertTrue(False)  #the caseID was not expected
 
         if len(expected_events) > 0:#unobserved expected events
@@ -55,7 +55,7 @@ class process_mining_test(unittest.TestCase):
                 self.assertEqual(expected_events[event][1], bucket)  # check if its bucket is correct
                 del expected_events[event]  # removed the expected element in case the caseID is repeated in some way
             else:
-                print("case ID: {0}, was not expected".format(caseID))
+                print("case ID: {0}, was not expected".format(event))
                 self.assertTrue(False)  #the caseID was not expected
 
         if len(expected_events) > 0:#unobserved expected events
@@ -82,7 +82,7 @@ class process_mining_test(unittest.TestCase):
                 self.assertEqual(expected_events[event][1], bucket)  # check if its bucket is correct
                 del expected_events[event]  # removed the expected element in case the caseID is repeated in some way
             else:
-                print("case ID: {0}, was not expected".format(caseID))
+                print("case ID: {0}, was not expected".format(event))
                 self.assertTrue(False)  #the caseID was not expected
 
         if len(expected_events) > 0:#unobserved expected events
@@ -110,7 +110,7 @@ class process_mining_test(unittest.TestCase):
                 self.assertEqual(expected_events[event][1], bucket)  # check if its bucket is correct
                 del expected_events[event]  # removed the expected element in case the caseID is repeated in some way
             else:
-                print("case ID: {0}, was not expected".format(caseID))
+                print("case ID: {0}, was not expected".format(event))
                 self.assertTrue(False)  #the caseID was not expected
 
         if len(expected_events) > 0:#unobserved expected events
