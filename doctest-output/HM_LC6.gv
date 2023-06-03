@@ -1,0 +1,10 @@
+// HM_LC
+graph {
+	graph [rankdir=LR]
+	node [shape=box]
+	edge [arrowType=normal]
+	A -- B1 [label="0.75 AND" dir=forward]
+	A -- B2 [label="0.75 AND" dir=forward]
+	D -- F [label="0.5 AND" dir=forward]
+	D -- E [label="0.83 AND" dir=forward]
+}

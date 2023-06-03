@@ -27,31 +27,25 @@
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:15:00.000+01:00"/>
-            <string key="concept:name" value="B"/>
-            <string key="lifecycle:transition" value="complete"/>
-        </event>
-        <event>
-            <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:30:00.000+01:00"/>
-            <string key="concept:name" value="C"/>
-            <string key="lifecycle:transition" value="complete"/>
-        </event>
-        <event>
-            <string key="org:resource" value="UNDEFINED"/>
             <date key="time:timestamp" value="2023-01-12T13:00:00.000+01:00"/>
-            <string key="concept:name" value="D"/>
-            <string key="lifecycle:transition" value="complete"/>
-        </event>
-        <event>
-            <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:30:00.000+01:00"/>
-            <string key="concept:name" value="E"/>
+            <string key="concept:name" value="B1"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
             <date key="time:timestamp" value="2023-01-12T14:00:00.000+01:00"/>
+            <string key="concept:name" value="C"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T16:00:00.000+01:00"/>
+            <string key="concept:name" value="E"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T17:00:00.000+01:00"/>
             <string key="concept:name" value="F"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
@@ -60,38 +54,32 @@
         <string key="concept:name" value="101"/>
       	<event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:05:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T12:15:00.000+01:00"/>
             <string key="concept:name" value="A"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:45:00.000+01:00"/>
-            <string key="concept:name" value="B"/>
+            <date key="time:timestamp" value="2023-01-12T13:00:00.000+01:00"/>
+            <string key="concept:name" value="B2"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:25:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T14:00:00.000+01:00"/>
             <string key="concept:name" value="C"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:50:00.00+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T15:00:00.000+01:00"/>
             <string key="concept:name" value="D"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T14:10:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T17:00:00.000+01:00"/>
             <string key="concept:name" value="E"/>
-            <string key="lifecycle:transition" value="complete"/>
-        </event>
-        <event>
-            <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T14:05:00.000+01:00"/>
-            <string key="concept:name" value="F"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
     </trace>
@@ -99,59 +87,71 @@
         <string key="concept:name" value="102"/>
       	<event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:00:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T15:00:00.000+01:00"/>
             <string key="concept:name" value="A"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T14:00:00.000+01:00"/>
-            <string key="concept:name" value="B"/>
+            <date key="time:timestamp" value="2023-01-12T15:30:00.000+01:00"/>
+            <string key="concept:name" value="B1"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T14:05:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T15:45:00.000+01:00"/>
             <string key="concept:name" value="C"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T14:015:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T17:00:00.000+01:00"/>
             <string key="concept:name" value="D"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:25:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T18:00:00.000+01:00"/>
             <string key="concept:name" value="E"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T15:50:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T19:00:00.000+01:00"/>
             <string key="concept:name" value="F"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
     </trace>
     <trace>
         <string key="concept:name" value="103"/>
+      	<event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T12:30:00.000+01:00"/>
+            <string key="concept:name" value="A"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:45:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T13:30:00.000+01:00"/>
+            <string key="concept:name" value="B2"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T14:30:00.000+01:00"/>
+            <string key="concept:name" value="C"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T15:30:00.000+01:00"/>
             <string key="concept:name" value="D"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:02:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T16:30:00.000+01:00"/>
             <string key="concept:name" value="E"/>
-            <string key="lifecycle:transition" value="complete"/>
-        </event>
-        <event>
-            <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:45:00.000+01:00"/>
-            <string key="concept:name" value="F"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
     </trace>
@@ -159,19 +159,31 @@
         <string key="concept:name" value="104"/>
       	<event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:37:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T13:05:00.000+01:00"/>
             <string key="concept:name" value="A"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:20:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T16:05:00.000+01:00"/>
+            <string key="concept:name" value="C"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T16:05:00.000+01:00"/>
+            <string key="concept:name" value="D"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T17:05:00.000+01:00"/>
             <string key="concept:name" value="E"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:40:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T18:05:00.000+01:00"/>
             <string key="concept:name" value="F"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
@@ -180,20 +192,38 @@
         <string key="concept:name" value="105"/>
       	<event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:15:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T12:00:00.000+01:00"/>
             <string key="concept:name" value="A"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T12:00:00.000+01:00"/>
-            <string key="concept:name" value="B"/>
+            <date key="time:timestamp" value="2023-01-12T13:00:00.000+01:00"/>
+            <string key="concept:name" value="B2"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
         <event>
             <string key="org:resource" value="UNDEFINED"/>
-            <date key="time:timestamp" value="2023-01-12T13:30:00.000+01:00"/>
+            <date key="time:timestamp" value="2023-01-12T14:00:00.000+01:00"/>
             <string key="concept:name" value="C"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T15:00:00.000+01:00"/>
+            <string key="concept:name" value="D"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T16:00:00.000+01:00"/>
+            <string key="concept:name" value="E"/>
+            <string key="lifecycle:transition" value="complete"/>
+        </event>
+        <event>
+            <string key="org:resource" value="UNDEFINED"/>
+            <date key="time:timestamp" value="2023-01-12T17:00:00.000+01:00"/>
+            <string key="concept:name" value="F"/>
             <string key="lifecycle:transition" value="complete"/>
         </event>
     </trace>

@@ -152,10 +152,9 @@ class HM_LC:
             #for the next line of code, A will be the variable for where the edge is coming from
             #C and B will be the where the edge is going to, and its the and/XOR relation for C and B
             for (A), (listOfB) in above_dependency_threshold.items(): #everything above dependency threshold
-
                 choices = len(listOfB) # all that A goes to
                 if choices != 2: # if A goes to only 1 or more than to, have to visual idea to implement for multiple paths
-                    for i in range(0, choices - 1):  # loop over all listofB
+                    for i in range(0, choices):  # loop over all listofB
                         G.edge(A, listOfB[i][0], label=str(listOfB[0][self.__labelType]), dir='forward')
                 else:
                     and_relation = False

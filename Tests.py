@@ -166,7 +166,7 @@ class process_mining_test(unittest.TestCase):
             self.assertTrue(False)  # the relation was not expecte
 
     def test_HM_LC_2(self):
-        source = xes_log_source_from_file("XES-files\LC-test.xes") #source
+        source = xes_log_source_from_file("XES-files\HM_LC-test.xes") #source
         test_HM_LC = Process_Discovery.HM_LC(0.01, 0, 0) #conditions, dependendecy, and 'and' Threshold will not be needed
         test_HM_LC.setModelRefreshRate(sys.maxsize)  #dont need to print model
         test_HM_LC.subscribe(source)
@@ -224,7 +224,7 @@ class process_mining_test(unittest.TestCase):
             self.assertTrue(False)  # the relation was not expecte
 
     def test_HM_LC_3(self):
-        source = xes_log_source_from_file("XES-files\LC-test.xes") #source
+        source = xes_log_source_from_file("XES-files\HM_LC-test.xes") #source
         test_HM_LC = Process_Discovery.HM_LC(0.125, 0, 0) #conditions, dependendecy, and 'and' Threshold will not be needed
         test_HM_LC.setModelRefreshRate(sys.maxsize)  #dont need to print model
         test_HM_LC.subscribe(source)
@@ -282,7 +282,7 @@ class process_mining_test(unittest.TestCase):
             self.assertTrue(False)  # the relation was not expecte
 
     def test_HM_LC_4(self):
-        source = xes_log_source_from_file("XES-files\LC-test.xes") #source
+        source = xes_log_source_from_file("XES-files\HM_LC-test.xes") #source
         test_HM_LC = Process_Discovery.HM_LC(0.1, 0, 0) #conditions, dependendecy, and 'and' Threshold will not be needed
         test_HM_LC.setModelRefreshRate(sys.maxsize)  #dont need to print model
         test_HM_LC.subscribe(source)
@@ -388,7 +388,7 @@ class process_mining_test(unittest.TestCase):
             self.assertTrue(False)  # the relation was not expecte
 
     def test_HM_LCB_2(self):
-        source = xes_log_source_from_file("XES-files\LC-test.xes") #source
+        source = xes_log_source_from_file("XES-files\HM_LCB-test.xes") #source
         test_HM_LCB = Process_Discovery.HM_LCB(100, 0, 0) #conditions, dependendecy, and 'and' Threshold will not be needed
         test_HM_LCB.setModelRefreshRate(sys.maxsize)  #dont need to print model
         test_HM_LCB.subscribe(source)
@@ -446,7 +446,7 @@ class process_mining_test(unittest.TestCase):
             self.assertTrue(False)  # the relation was not expecte
 
     def test_HM_LCB_3(self):
-        source = xes_log_source_from_file("XES-files\LC-test.xes") #source
+        source = xes_log_source_from_file("XES-files\HM_LCB-test.xes") #source
         test_HM_LCB = Process_Discovery.HM_LCB(budget=10, and_threshold=0, dependency_threshold=0) #conditions, dependendecy, and 'and' Threshold will not be needed
         test_HM_LCB.setModelRefreshRate(sys.maxsize)  #dont need to print model
         test_HM_LCB.subscribe(source)
@@ -504,7 +504,7 @@ class process_mining_test(unittest.TestCase):
             self.assertTrue(False)  # the relation was not expecte
 
     def test_HM_LCB_4(self):
-        source = xes_log_source_from_file("XES-files\LC-test-2.xes") #source
+        source = xes_log_source_from_file("XES-files\HM_LCB-test-2.xes") #source
         test_HM_LCB = Process_Discovery.HM_LCB(budget=8, and_threshold=0, dependency_threshold=0) #conditions, dependendecy, and 'and' Threshold will not be needed
         test_HM_LCB.setModelRefreshRate(sys.maxsize)  #dont need to print model
         test_HM_LCB.subscribe(source)

@@ -2,9 +2,9 @@
 #import xml.etree.ElementTree as ET
 import graphviz as pgv
 #from collections import defaultdict
-#import reactivex as rx
-#from reactivex import create
-#from reactivex import operators as op
+import reactivex as rx
+from reactivex import create
+from reactivex import operators as op
 #import json
 #from pybeamline import bevent
 import sys
@@ -17,7 +17,7 @@ import Conformance_Checking
 import time
 
 #source of events
-source = xes_log_source_from_file("XES-files\example.xes")
+source = xes_log_source_from_file("XES-files\LC-test-2.xes")
 
 #Lossy Count
 # new_LC = Process_Discovery.Lossy_count()
@@ -25,11 +25,12 @@ source = xes_log_source_from_file("XES-files\example.xes")
 # new_LC.setPrintRefreshRate(32)
 # new_LC.subscribe(source)
 #HM_LC
-# new_HM_LCB = Process_Discovery.HM_LCB(budget=5000, dependency_threshold=0, and_threshold=0)
-# new_HM_LCB.setModelRefreshRate(26220) #by default is 1/max_approx_error
-# new_HM_LCB.setLabel('Dependency') #by default is Frequency
-# new_HM_LCB.subscribe(source)
-
+new_HM_LC = Process_Discovery.HM_LC(max_approx_error=0.01, dependency_threshold=0, and_threshold=0.8)
+new_HM_LC.setModelRefreshRate(25) #by default is 1/max_approx_error
+new_HM_LC.setLabel('Dependency') #by default is Frequency
+new_HM_LC.setFileName('test')
+new_HM_LC.subscribe(source)
+print(new_HM_LC.getEventsObserved())
 
 # start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
@@ -118,15 +119,15 @@ source = xes_log_source_from_file("XES-files\example.xes")
 # #
 # M = (B,P,F)
 
-conformance_checking = Conformance_Checking.CC_BH()
-conformance_checking.setM_FromXES('XES-files/example.xes')
+# conformance_checking = Conformance_Checking.CC_BH()
+# conformance_checking.setM_FromXES('XES-files/example.xes')
 
 # start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
 
-conformance_checking.subscribe(source)
-
-conformance_checking.printRefModel()
+# conformance_checking.subscribe(source)
+#
+# conformance_checking.printRefModel()
 
 
 # conformance_checking.subscribe(source)
