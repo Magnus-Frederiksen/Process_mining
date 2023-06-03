@@ -16,6 +16,7 @@ install Graphviz
 pip might not work for this, instead install directly to website: https://pygraphviz.github.io/
 graphviz\bin is required to be added to your system PATH.
 
+
 Your first program:
 
 check out reactivex https://rxpy.readthedocs.io/en/latest/index.html for guidelines on how the variable type observable works.
@@ -24,6 +25,7 @@ or it is possible from pybeamline.source to use xes_log_source_from_file. Which 
 Initiate an object from a class from either the 2 process mining files: Process_Discovery.py, Conformance_Checking.py.
 Configure the object with the respective class' method.
 call subscribe which takes type observable as input.
+
 
 example:
 
