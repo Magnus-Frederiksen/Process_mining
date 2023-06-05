@@ -17,7 +17,7 @@ import Conformance_Checking
 import time
 
 #source of events
-source = xes_log_source_from_file("XES-files\LC-test-2.xes")
+source = xes_log_source_from_file("XES-files\display.xes")
 
 #Lossy Count
 # new_LC = Process_Discovery.Lossy_count()
@@ -25,12 +25,12 @@ source = xes_log_source_from_file("XES-files\LC-test-2.xes")
 # new_LC.setPrintRefreshRate(32)
 # new_LC.subscribe(source)
 #HM_LC
-new_HM_LC = Process_Discovery.HM_LC(max_approx_error=0.01, dependency_threshold=0, and_threshold=0.8)
-new_HM_LC.setModelRefreshRate(25) #by default is 1/max_approx_error
-new_HM_LC.setLabel('Dependency') #by default is Frequency
+new_HM_LC = Process_Discovery.HM_LC(max_approx_error=0.01, dependency_threshold=0.7, and_threshold=0.6)
+new_HM_LC.setModelRefreshRate(5) #by default is 1/max_approx_error
+new_HM_LC.setLabel('Time') #by default is Frequency
 new_HM_LC.setFileName('test')
+new_HM_LC.setlabelRounder(2)
 new_HM_LC.subscribe(source)
-print(new_HM_LC.getEventsObserved())
 
 # start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))

@@ -9,7 +9,7 @@ class CC_BH:
     def __init__(self, M=([],defaultdict(list),defaultdict(list))):
         # the input is expecting to be the
 
-        self.setM(M)
+        self.setM(M) #calls method to set, B, P, and F
 
         self.__trace_last_event = dict()  # recalls last event for trace to find relation
 
@@ -20,13 +20,9 @@ class CC_BH:
         self.__obs = defaultdict(list)  # saves all distinct relations in a trace that has ocurred
         self.__inc = dict()  # saves amount of incorrect relations acording to the reference model of a trace
 
-        self.__trace_log = defaultdict(list)
-
     def __update(self, newEvent):
         caseID = newEvent.get_trace_name()  # easier reference to caseID
         eventName = newEvent.get_event_name()  # easier trefermce to eventNa,e
-
-        self.__trace_log[caseID].append(eventName)  # updates the specefic caseIDs log
 
         if caseID not in self.__trace_last_event:  # if this is first time caseID appears
             self.__trace_last_event[caseID] = eventName  # save current event
@@ -113,13 +109,6 @@ class CC_BH:
     def setM_FromXES(self, fileName):
         self.setM(model_from_XES().set_model_from_XES(fileName))
 
-
-    def print_trace_log(self):
-        for caseID in self.__trace_log:
-            print("caseID: {0}, had the trace: {1}".format(caseID, self.__trace_log[caseID]))
-            print("which resulted in a final conformance of {0}".format(self.__conformance[caseID]))
-
-
     def printRefModel(self):
         G = pgv.Graph(comment='ref_model')  # setting type of graph
         G.graph_attr['rankdir'] = 'LR'
@@ -129,7 +118,7 @@ class CC_BH:
         for (A, B) in self.__B:
             G.edge(A, B, label=str(), dir='forward')
 
-        G.render('doctest-output/ref_Model.gv').replace('\\', '/')
+        G.render('model-output/ref_Model.gv').replace('\\', '/')
 
 class model_from_XES(CC_BH):
     def __init__(self):

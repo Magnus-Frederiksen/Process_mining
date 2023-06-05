@@ -1,5 +1,5 @@
-import datetime
-from datetime import datetime
+
+from datetime import datetime, timedelta
 import graphviz as pgv
 from collections import defaultdict
 import math
@@ -75,7 +75,7 @@ class HM_LC:
         self.__observed_events = 1
         self.__bucket_width = int(math.ceil(1 / max_approx_error)) #set bucket width
 
-        self.__modelRefreshRate = self.__bucket_width #default refreshrate
+        self.__modelRefreshRate = self.__bucket_width #default model refreshrate
         self.__modelNumber = 1 #used to keep track of number of models completed
         self.__modelName = 'HM_LC' #set default file name on the models
 
@@ -188,7 +188,7 @@ class HM_LC:
                             G.edge(A, listOfB[i][0], label=str(listOfB[i][self.__labelType]) + " XOR", dir='forward')
 
 
-            G.render('doctest-output/' + self.__modelName + str(self.__modelNumber) + '.gv').replace('\\', '/')
+            G.render('model-output/' + self.__modelName + str(self.__modelNumber) + '.gv').replace('\\', '/')
             self.__modelNumber += 1
 
 
@@ -250,7 +250,6 @@ class HM_LCB:
     def __init__(self, budget = 10 , dependency_threshold = 0, and_threshold = 0.8):
         self.__budget = int(budget) #max length of stored events and relations
         self.__minimum_dependency_threshold = dependency_threshold
-       # self.__positive_observation_threshold = positive_observation_threshold
         self.__and_threshold = and_threshold
 
 
@@ -384,7 +383,7 @@ class HM_LCB:
                             G.edge(A, listOfB[i][0], label=str(listOfB[i][self.__labelType]) + " XOR", dir='forward')
 
 
-            G.render('doctest-output/' + self.__modelName + str(self.__modelNumber) + '.gv').replace('\\', '/')
+            G.render('model-output/' + self.__modelName + str(self.__modelNumber) + '.gv').replace('\\', '/')
             self.__modelNumber += 1
 
     def subscribe(self, source): #subscribes source to the miner
