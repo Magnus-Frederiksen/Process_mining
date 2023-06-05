@@ -1,42 +1,24 @@
-#from datetime import datetime
-#import xml.etree.ElementTree as ET
-import graphviz as pgv
-#from collections import defaultdict
-import reactivex as rx
-from reactivex import create
-from reactivex import operators as op
-#import json
-#from pybeamline import bevent
-import sys
-
 from pybeamline.sources import xes_log_source_from_file
-#from pybeamline.mappers import sliding_window_to_log
 import Process_Discovery
 import Conformance_Checking
 
-import time
 
 #source of events
-source = xes_log_source_from_file("XES-files\display.xes")
+# source = xes_log_source_from_file("XES-files\'filename'.xes")
 
 #Lossy Count
 # new_LC = Process_Discovery.Lossy_count()
 # new_LC.setMax_approx_error(0.01)
 # new_LC.setPrintRefreshRate(32)
 # new_LC.subscribe(source)
+
 #HM_LC
-new_HM_LC = Process_Discovery.HM_LC(max_approx_error=0.01, dependency_threshold=0.7, and_threshold=0.6)
-new_HM_LC.setModelRefreshRate(5) #by default is 1/max_approx_error
-new_HM_LC.setLabel('Time') #by default is Frequency
-new_HM_LC.setFileName('test')
-new_HM_LC.setlabelRounder(2)
-new_HM_LC.subscribe(source)
-
-# start_time = time.time()
-# print("--- %s seconds ---" % (time.time() - start_time))
-# 26220
-#
-
+# new_HM_LC = Process_Discovery.HM_LC(max_approx_error=0.01, dependency_threshold=0.0, and_threshold=0.6)
+# new_HM_LC.setModelRefreshRate(1) #by default is 1/max_approx_error
+# new_HM_LC.setLabel('Frequency') #by default is Frequency
+# new_HM_LC.setFileName('HM_LC')
+# new_HM_LC.setlabelRounder(2)
+# new_HM_LC.subscribe(source)
 
 # #HM_LCB
 # new_HM_LCB = Process_Discovery.HM_LCB(20, 0.4, 0.4)
@@ -45,7 +27,7 @@ new_HM_LC.subscribe(source)
 # new_HM_LCB.setlabelRounder(2) #by default is 2
 # new_HM_LCB.setFileName('test_miner_for_HM_LCB') #by default is HM_LC
 # new_HM_LCB.subscribe(source)
-#
+
 # #own model for conformance checking
 # Model one
 # B = []
@@ -122,15 +104,9 @@ new_HM_LC.subscribe(source)
 # conformance_checking = Conformance_Checking.CC_BH()
 # conformance_checking.setM_FromXES('XES-files/example.xes')
 
-# start_time = time.time()
-# print("--- %s seconds ---" % (time.time() - start_time))
-
 # conformance_checking.subscribe(source)
-#
+
 # conformance_checking.printRefModel()
-
-
-# conformance_checking.subscribe(source)
 
 # Print Stream
 # source.subscribe(
