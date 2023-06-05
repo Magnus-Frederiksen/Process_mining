@@ -1,3 +1,5 @@
+github: https://github.com/Magnus-Frederiksen/Process_mining
+
 # Process_mining
 
 Installing required packages:
