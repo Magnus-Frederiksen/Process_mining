@@ -1,6 +1,0 @@
-// HM_LC
-graph {
-	graph [rankdir=LR]
-	node [shape=box]
-	edge [arrowType=normal]
-}
