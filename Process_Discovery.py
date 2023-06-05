@@ -155,7 +155,7 @@ class HM_LC:
                 choices = len(listOfB) # all that A goes to
                 if choices != 2: # if A goes to only 1 or more than to, have to visual idea to implement for multiple paths
                     for i in range(0, choices):  # loop over all listofB
-                        G.edge(A, listOfB[i][0], label=str(listOfB[0][self.__labelType]), dir='forward')
+                        G.edge(A, listOfB[i][0], label=str(listOfB[i][self.__labelType]), dir='forward')
                 else:
                     and_relation = False
                     for i in range(0,choices): # for all B's that A goes to
@@ -349,8 +349,8 @@ class HM_LCB:
 
                 choices = len(listOfB) # all that A goes to
                 if choices != 2: # if A goes to only 1 or more than to, have to visual idea to implement for multiple paths
-                    for i in range (0, choices - 1): #loop over all listofB
-                        G.edge(A, listOfB[i][0], label=str(listOfB[0][self.__labelType]), dir='forward')
+                    for i in range (0, choices): #loop over all listofB
+                        G.edge(A, listOfB[i][0], label=str(listOfB[i][self.__labelType]), dir='forward')
                 else:
                     and_relation = False
                     for i in range(0,choices): # for all B's that A goes to

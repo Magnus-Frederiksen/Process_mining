@@ -14,15 +14,16 @@ import Conformance_Checking
 
 #HM_LC
 # new_HM_LC = Process_Discovery.HM_LC(max_approx_error=0.01, dependency_threshold=0.0, and_threshold=0.6)
-# new_HM_LC.setModelRefreshRate(1) #by default is 1/max_approx_error
+# new_HM_LC.setModelRefreshRate(32) #by default is 1/max_approx_error
 # new_HM_LC.setLabel('Frequency') #by default is Frequency
 # new_HM_LC.setFileName('HM_LC')
 # new_HM_LC.setlabelRounder(2)
 # new_HM_LC.subscribe(source)
 
+
 # #HM_LCB
-# new_HM_LCB = Process_Discovery.HM_LCB(20, 0.4, 0.4)
-# new_HM_LCB.setModelRefreshRate(3) #by default is 1
+# new_HM_LCB = Process_Discovery.HM_LCB(50, 0, 0.4)
+# new_HM_LCB.setModelRefreshRate(32) #by default is 1
 # new_HM_LCB.setLabel('Dependency') #by default is Frequency
 # new_HM_LCB.setlabelRounder(2) #by default is 2
 # new_HM_LCB.setFileName('test_miner_for_HM_LCB') #by default is HM_LC
